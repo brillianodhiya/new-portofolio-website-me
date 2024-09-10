@@ -11,12 +11,12 @@ import {
 
 export function ModeToggle() {
   const [theme, setThemeState] = React.useState<'light' | 'dark' | 'system'>(
-    'light',
+    'dark',
   )
 
   React.useEffect(() => {
     const isDarkMode = document.documentElement.classList.contains('dark')
-    setThemeState(isDarkMode ? 'dark' : 'light')
+    setThemeState('dark')
   }, [])
 
   React.useEffect(() => {
@@ -24,7 +24,7 @@ export function ModeToggle() {
       theme === 'dark' ||
       (theme === 'system' &&
         window.matchMedia('(prefers-color-scheme: dark)').matches)
-    document.documentElement.classList[isDark ? 'add' : 'remove']('dark')
+    document.documentElement.classList['add']('dark')
   }, [theme])
 
   const onChangeTheme = (theme: any) => {
