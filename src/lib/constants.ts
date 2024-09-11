@@ -144,6 +144,7 @@ export const EXPERIENCE = [
     position: 'Frontend Developer',
     start: '2019',
     end: '2019',
+    link: 'https://allbestsistem.com/',
     tasks: [
       'Developing the CEISA 4.0 application for the client (Beacukai) meeting with the client (Beacukai) directly for its development',
     ],
@@ -154,6 +155,7 @@ export const EXPERIENCE = [
     position: 'Junior Programmer',
     start: '2018',
     end: '2018',
+    link: 'https://www.delta.id/',
     tasks: [
       'Create UI Web-based as request by Client',
       'Take care of the marketing department for a while',
