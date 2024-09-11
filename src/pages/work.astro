@@ -31,9 +31,9 @@ import { EXPERIENCE } from '../lib/constants'
                 {entry.company}
               </a>
               <div class="text-sm font-semibold">{entry.position}</div>
-              <article class="prose dark:prose-invert">
+              <article class="prose dark:prose-invert flex flex-col gap-1">
                 {entry.tasks.map((i) => (
-                  <>{i}</>
+                  <div>- {i}</div>
                 ))}
               </article>
             </li>
